@@ -1,4 +1,3 @@
-/* Tipografías */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Playfair+Display:wght@700&family=Roboto:wght@500&family=Montserrat:wght@500&display=swap');
 
 body {
@@ -12,13 +11,12 @@ body {
     height: 100%;
 }
 
-/* Navegación superior */
 .top-nav {
     display: flex;
     align-items: center;
     background-color: #5271FF;
     padding: 10px 20px;
-    justify-content: space-between; /* Distribuir los elementos */
+    justify-content: space-between;
 }
 
 .logo-container {
@@ -37,7 +35,6 @@ body {
     color: #FFFFFF;
 }
 
-/* Estilo para el formulario de búsqueda */
 .search-container {
     display: flex;
     justify-content: center;
@@ -47,7 +44,7 @@ body {
 .search-container form {
     display: flex;
     max-width: 400px;
-    width: 100%; /* Asegura que el formulario se ajuste al contenedor */
+    width: 100%;
 }
 
 .search-container .form-control {
@@ -65,10 +62,9 @@ body {
     color: #ffffff;
 }
 
-/* Botones de autenticación */
 .auth-buttons {
     display: flex;
-    gap: 10px; /* Espacio entre los botones */
+    gap: 10px;
 }
 
 .auth-buttons button {
@@ -84,18 +80,17 @@ body {
     background-color: #66B200;
 }
 
-/* Navegación principal */
 .main-nav {
     background-color: #FFFFFF;
     padding: 10px 20px;
-    border-bottom: 1px solid #d1d1d1; /* Añadido para una línea de separación sutil */
+    border-bottom: 1px solid #d1d1d1;
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Alinea los elementos verticalmente */
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -118,8 +113,8 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     min-width: 160px;
-    border-radius: 4px; /* Añadido para bordes redondeados */
-    padding: 10px 0; /* Añadido para separar los elementos del borde */
+    border-radius: 4px;
+    padding: 10px 0;
 }
 
 .main-nav .dropdown:hover .dropdown-content {
@@ -135,17 +130,15 @@ body {
 
 .main-nav .dropdown-content a:hover {
     background-color: #f1f1f1;
-    border-radius: 4px; /* Añadido para bordes redondeados en los elementos */
+    border-radius: 4px;
 }
 
-/* Opcional: Cambiar el color del enlace en el menú desplegable */
 .main-nav .dropdown .dropbtn {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
-/* Ajustes para el contenido principal */
 form {
     margin: 0;
 }
@@ -166,8 +159,8 @@ form {
 }
 
 .card-img-top.ruta-imagen {
-    height: 200px; /* Ajusta la altura según sea necesario */
-    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+    height: 200px;
+    object-fit: cover;
 }
 
 form {
@@ -204,6 +197,67 @@ button:hover {
 
 .custom-container {
     max-width: 2000px; 
+}
+
+.logout-link {
+    color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px;
+    }
+
+    .logo-container img {
+        max-width: 80px;
+    }
+
+    .logo-container .text {
+        font-size: 20px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .auth-buttons button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-nav li {
+        width: 100%;
+    }
+
+    .main-nav li a {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-container .form-control {
+        width: 100%;
+    }
+
+    .search-container .btn-outline-success {
+        width: 100%;
+        margin-top: 5px;
+    }
 }
 
 .logout-link {

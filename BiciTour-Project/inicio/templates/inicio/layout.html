@@ -13,11 +13,11 @@
 <body>
     <!-- Navegación superior -->
     <div class="top-nav">
-        <div clas="image-text-container">
-        <div class="logo-container">
-            <img src="{% static 'inicio/images/image.png' %}" alt="Bici">
-            <div class="text">BiciTour</div>
-        </div>
+        <div class="image-text-container">
+            <div class="logo-container">
+                <img src="{% static 'inicio/images/image.png' %}" alt="Bici">
+                <div class="text">BiciTour</div>
+            </div>
         </div>
     
         <!-- Busqueda -->
@@ -34,7 +34,6 @@
                 <a href="{% url 'register' %}"><button>Registrar</button></a>
             {% endif %}
         </div>
-        
     </div>
 
     <!-- Navegación principal -->
@@ -53,7 +52,7 @@
                 <a href="#" class="dropbtn">Contáctanos</a>
                 <div class="dropdown-content">
                     <a href="{% url 'Contactanos' %}"> Contáctanos</a>
-                    <a href="{% url 'Quienes somos' %}">Quien somos</a>
+                    <a href="{% url 'Quienes somos' %}">Quienes somos</a>
                 </div>
             </li>
         </ul>
